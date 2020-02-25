@@ -1,4 +1,4 @@
-package homework4;
+package homework6;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +15,6 @@ public class Main {
         System.out.println(pet);
 
         System.out.println(human);
-
-
 
 
     }
