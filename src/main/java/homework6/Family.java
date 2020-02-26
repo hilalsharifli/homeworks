@@ -1,6 +1,4 @@
-package homework5;
-
-import java.util.Arrays;
+package homework6;
 
 public class Family {
     private Human mother;
@@ -74,7 +72,8 @@ public class Family {
 
     Boolean deleteChild(int index) {
         if (children[index] == null) return false;
-        else {Human[] childrenNew=new Human[children.length];
+        else {
+            Human[] childrenNew=new Human[children.length];
             for (int i = 0; i <children.length ; i++) {
                 if(children[index] != children[i]) {
                     childrenNew[i]=children[i];

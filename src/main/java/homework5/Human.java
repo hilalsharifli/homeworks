@@ -103,6 +103,6 @@ public class Human {
 
     @Override
     public String toString()
-    {return String.format( "Human{name=" + name + " surname=" + surname + ", year=" + year + ", iq=" + IQ + "}"); }
+    {return String.format( "Human{name=" + name + " surname=" + surname + ", year=" + year + ", iq=" + IQ + ", schedule=" + Arrays.deepToString(getSchedule()) + "}"); }
 }
 
