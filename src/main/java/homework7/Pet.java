@@ -1,8 +1,8 @@
-package homework6;
+package homework7;
 
 import java.util.Arrays;
 
-public class Pet {
+abstract class Pet {
     private Species species;
     private String nickname;
     private int age;
@@ -10,13 +10,11 @@ public class Pet {
 
     private String [] habits;
 
-    public Pet(Species species, String nickname) {
-        this.species=species;
+    public Pet(String nickname) {
         this.nickname = nickname;
     }
 
-    public Pet(Species species, String nickname, int age, int trickLevel, String[] habits) {
-        this.species = species;
+    public Pet(String nickname, int age, int trickLevel, String[] habits) {
         this.nickname = nickname;
         this.age = age;
         this.trickLevel = trickLevel;
@@ -79,9 +77,7 @@ public class Pet {
         System.out.println("I am eating");
     }
 
-    void respond (String name) {
-        System.out.printf("Hello owner. I am %s. I miss you", name);
-    }
+    abstract void respond (String name);
 
     void foul() {
         System.out.println("I need to cover up");

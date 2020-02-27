@@ -74,6 +74,19 @@ public class Pet {
             return "almost not sly";
         }
     }
+
+    void eat() {
+        System.out.println("I am eating");
+    }
+
+    void respond (String name) {
+        System.out.printf("Hello owner. I am %s. I miss you", name);
+    }
+
+    void foul() {
+        System.out.println("I need to cover up");
+    }
+
     @Override
     public String toString()
     {return String.format( "dog{" + species + " nickname=" + nickname + ", age=" + age + " habits=" + Arrays.toString(habits) + "}"); }
